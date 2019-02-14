@@ -1,0 +1,13 @@
+.LandingPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .background-logo {
+    position: absolute;
+    height: 90vmin;
+    pointer-events: none;
+    align-self: center;
+  }
+}
