@@ -3,11 +3,11 @@ import portrait from '../res/portrait.svg'
 import linked_in from '../res/icons/linked_in.svg'
 import email from '../res/icons/email.svg'
 
-export default class LandingPage extends React.Component {
+export default class GridPage extends React.Component {
 
   render() {
     return (
-      <div className='LandingPage'>
+      <div className='GridPage'>
         <div className='wrapper'>
 
           <a className='box a' href='http://www.michelleakanji.ch'

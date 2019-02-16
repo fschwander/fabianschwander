@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import './App.scss';
-import LandingPage from "./pages/LandingPage";
+import GridPage from "./pages/GridPage";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <LandingPage/>
+        <GridPage/>
       </div>
     );
   }
