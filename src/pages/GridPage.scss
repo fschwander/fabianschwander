@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   position: fixed;
-  font-family: 'Poppins', Avenir, Helvetica, sans-serif;
   line-height: 1;
 
   .wrapper {
@@ -28,7 +27,7 @@
 
     .box {
       background-color: $clr_dark;
-      color: white;
+      color: $clr_white;
       padding: 1vmin;
       display: flex;
       align-items: center;
@@ -75,7 +74,7 @@
 
         h1 {
           margin: 0;
-          color: black;
+          color: $clr_black;
           font-size: 3.5vw;
           position: absolute;
           pointer-events: none;
