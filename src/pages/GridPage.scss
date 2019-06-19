@@ -1,27 +1,32 @@
 .GridPage {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   line-height: 1;
+
 
   .wrapper {
     display: grid;
     grid-gap: 1vmin;
-    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-    height: 100%;
-    width: 100%;
+    height: 96%;
+    width: 96%;
     transition: 0.2s;
+
 
     a.box {
       text-decoration: unset;
       word-break: break-all;
+      background-color: $clr_dark;
+      color: $clr_highlight_main;
+      text-shadow: $clr_highlight_second -2px 2px;
 
       &:hover {
         background-color: $clr_darker;
-        color: $clr_highlight_main;
-        text-shadow: $clr_highlight_second -1px 2px;
+        color: #ffe811;
+        text-shadow: darkcyan -4px 4px;
       }
     }
 
@@ -37,14 +42,20 @@
       &.a {
         grid-column: 1 / 3;
         grid-row: 1;
-        font-size: 8vw;
+        font-size: 10vw;
+        line-height: 12vw;
       }
       &.b {
         grid-column: 3;
-        grid-row: 1 / 3;
-        writing-mode: vertical-rl;
-        text-orientation: mixed;
-        font-size: 9vw;
+        grid-row: 1 / 2;
+        line-height: 7vw;
+        font-size: 4vw;
+      }
+      &.b2 {
+        grid-column: 3;
+        grid-row: 2 / 3;
+        line-height: 10vw;
+        font-size: 10vw;
       }
       &.c {
         grid-column: 1;
@@ -105,16 +116,14 @@
       &.e {
         grid-column: 1;
         grid-row: 3;
-        font-size: 7vw;
-        span {
-          transform: rotate(-25deg);
-        }
+        font-size: 12vw;
+        line-height: 10vw;
       }
       &.f {
         grid-column: 2 / 4;
         grid-row: 3;
-        min-height: 30vh;
-        font-size: 8vw;
+        line-height: 12vw;
+        font-size: 7.4vw;
       }
     }
   }

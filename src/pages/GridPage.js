@@ -1,5 +1,5 @@
 import * as React from "react";
-import portrait from '../res/portrait.svg'
+import portrait from '../res/imgs/portrait.svg'
 import linked_in from '../res/icons/linked_in.svg'
 import email from '../res/icons/email.svg'
 
@@ -10,17 +10,24 @@ export default class GridPage extends React.Component {
       <div className='GridPage'>
         <div className='wrapper'>
 
-          <a className='box a' href='http://www.michelleakanji.ch'
-             target='_blank'
-             rel='noreferrer noopener'>
-            <span>Michelle Akanji</span>
-          </a>
-
-          <a className='box b'
+          <a className='box a'
              href='http://www.innere-werte.ch'
              target='_blank'
              rel='noreferrer noopener'>
             <span>Tavolata für innere Werte</span>
+          </a>
+
+          <a className='box b'
+             href='http://www.hofsterben.fabianschwander.ch'
+             target='_blank'
+             rel='noreferrer noopener'>
+            <span>Strukturenwandel in der Landwirtschaft</span>
+          </a>
+
+          <a className='box b2' href='http://www.michelleakanji.ch'
+             target='_blank'
+             rel='noreferrer noopener'>
+            <span>Michelle Akanji</span>
           </a>
 
           <div className='box c'>

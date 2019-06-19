@@ -2,7 +2,6 @@
   "name": "fabianschwander",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.twigo.ch",
   "dependencies": {
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
