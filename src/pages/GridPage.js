@@ -2,6 +2,8 @@ import * as React from "react";
 import portrait from '../res/imgs/portrait.svg'
 import linked_in from '../res/icons/linked_in.svg'
 import email from '../res/icons/email.svg'
+import SvgContainer from "../res/link-imgs/SvgContainer";
+import {Icons} from "../res/link-imgs/Icons";
 
 export default class GridPage extends React.Component {
 
@@ -14,20 +16,20 @@ export default class GridPage extends React.Component {
              href='http://www.innere-werte.ch'
              target='_blank'
              rel='noreferrer noopener'>
-            <span>Tavolata für innere Werte</span>
+            <SvgContainer src={Icons.tavolata}/>
           </a>
 
           <a className='box b'
              href='http://www.hofsterben.fabianschwander.ch'
              target='_blank'
              rel='noreferrer noopener'>
-            <span>Strukturenwandel in der Landwirtschaft</span>
+            <SvgContainer src={Icons.hofsterben}/>
           </a>
 
           <a className='box b2' href='http://www.michelleakanji.ch'
              target='_blank'
              rel='noreferrer noopener'>
-            <span>Michelle Akanji</span>
+            <SvgContainer src={Icons.michelleAkanji}/>
           </a>
 
           <div className='box c'>
@@ -51,14 +53,14 @@ export default class GridPage extends React.Component {
              href='http://www.ponsyrus.ch'
              target='_blank'
              rel='noreferrer noopener'>
-            <span>Ponsyrus</span>
+            <SvgContainer src={Icons.ponsyrus}/>
           </a>
 
           <a className='box f'
              href='https://web0.fhnw.ch/modulvisualisierung'
              target='_blank'
              rel='noreferrer noopener'>
-            <span>Interaktive Modulvisualisierung</span>
+            <SvgContainer src={Icons.modulvisualisierung}/>
           </a>
         </div>
       </div>
