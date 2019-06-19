@@ -7,10 +7,13 @@
   object-fit: cover;
   position: fixed;
 
+  &>*{
+    position: absolute;
+  }
+
   .sun {
     height: 140vmax;
     width: 140vmax;
-    position: absolute;
 
     &.rotate {
       animation: rotate-reverse 1000s linear infinite;
@@ -21,16 +24,21 @@
   }
 
   svg {
-    width: 28vmax;
-    height: 28vmax;
-    z-index: 1;
+    width: 26vmax;
+    height: 26vmax;
+    z-index: 0;
     circle {
-      r: 13vmax;
+      r: 12vmax;
       fill: $clr_white;
       stroke-width: 1vmax;
       stroke: $clr_black;
-      transform: translate(14vmax,14vmax);
+      transform: translate(13vmax,13vmax);
     }
+  }
+
+  img {
+    //max-height: 20vmax;
+    animation: rotate-reverse 12s ease-in-out infinite;
   }
 
   @keyframes rotate {
