@@ -1,5 +1,5 @@
 import * as React from "react";
-import portrait from '../res/imgs/portrait.svg'
+import portrait from '../res/imgs/img_portrait.svg'
 import SvgContainer from "../res/SvgContainer";
 import {Icons} from "../res/Icons";
 
