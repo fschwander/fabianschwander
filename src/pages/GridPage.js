@@ -18,6 +18,14 @@ export default class GridPage extends React.Component {
                           className='link-box'/>
           </a>
 
+          <a className='box a2'
+             href='http://www.isabelakanji.ch'
+             target='_blank'
+             rel='noreferrer noopener'>
+            <SvgContainer src={Icons.isabelAkanji}
+                          className='link-box'/>
+          </a>
+
           <a className='box b'
              href='http://www.hofsterben.fabianschwander.ch'
              target='_blank'
