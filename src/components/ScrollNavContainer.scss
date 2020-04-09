@@ -1,0 +1,21 @@
+.ScrollNavContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .items-container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 3vh 2vw;
+
+    .item {
+      padding: 1rem 2rem;
+      background-color:deeppink;
+
+      h2 {
+        margin-top: unset;
+      }
+    }
+  }
+
+}
