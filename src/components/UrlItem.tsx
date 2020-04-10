@@ -13,8 +13,10 @@ export const UrlItem: React.FC<UrlItemProps> = props => {
     <Col className={'UrlItem'} key={data.name + index}
          xs={12} sm={6} md={4}
          onClick={() => window.open(data.url, '_blank')}>
-      <h2>{data.name}</h2>
-      <p>{data.description}</p>
+      <div className={'inner-container button'}>
+        <h2>{data.name}</h2>
+        <p>{data.description}</p>
+      </div>
     </Col>
   );
 };
