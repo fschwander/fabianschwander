@@ -1,0 +1,15 @@
+.UrlTile {
+  padding: 4rem 2rem 6rem;
+  height: 100%;
+  width: 100%;
+  transition: .1s ease-out;
+
+  h2 {
+    margin-top: unset;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: #0006 2px 2px 15px;
+  }
+}

@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import {ItemsContainer} from './components/ItemsContainer';
+import {PortfolioPage} from './components/PortfolioPage';
 
 function App() {
 
   return (
     <div className="App">
-      <ItemsContainer/>
+      <PortfolioPage/>
     </div>
   );
 }

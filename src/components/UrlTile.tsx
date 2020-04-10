@@ -1,12 +1,11 @@
 import React from 'react';
-import {Col} from 'reactstrap';
-import './UrlItem.scss';
+import './UrlTile.scss';
 
-interface UrlItemProps {
+interface UrlTileProps {
   data: any
 }
 
-export const UrlItem: React.FC<UrlItemProps> = props => {
+export const UrlTile: React.FC<UrlTileProps> = props => {
   const {data} = props;
 
   const colors = ['deeppink', 'deepskyblue', 'rebeccapurple'];
@@ -29,14 +28,11 @@ export const UrlItem: React.FC<UrlItemProps> = props => {
   };
 
   return (
-    <Col className={'UrlItem'}
-         xs={12} sm={6} md={4}
-         onClick={() => window.open(data.url, '_blank')}>
-      <div className={'inner-container button'}
-           style={{backgroundImage: getRandomGradient()}}>
-        <h2>{data.name}</h2>
-        <p>{data.description}</p>
-      </div>
-    </Col>
+    <div className={'UrlTile button'}
+         onClick={() => window.open(data.url, '_blank')}
+         style={{backgroundImage: getRandomGradient()}}>
+      <h2>{data.name}</h2>
+      <p>{data.description}</p>
+    </div>
   );
 };
