@@ -8,17 +8,17 @@ export const urlItems:Array<UrlItemsInterface> = [
   {
     name: "Work Life Aargau",
     description: "Bachelorthesis",
-    url: "work-life-aargau.fabianschwander.ch"
+    url: "http://work-life-aargau.fabianschwander.ch"
   },
   {
     name: "Michelle Akanji",
     description: "Portfolio von Michelle Akanji",
-    url: "michelleakanji.ch"
+    url: "http://michelleakanji.ch"
   },
   {
-    name: "Informationsvisualisierung",
-    description: "Strukturenwandel in der Landwirtschaft",
-    url: "hofsterben.fabianschwander.ch"
+    name: "Strukturenwandel in der Landwirtschaft",
+    description: "Informationsvisualisierung",
+    url: "http://hofsterben.fabianschwander.ch"
   },
   {
     name: "Modulplaner",
@@ -28,16 +28,16 @@ export const urlItems:Array<UrlItemsInterface> = [
   {
     name: "Isabel Akanji",
     description: "Produkte aus den Bergen",
-    url: "isabelakanji.ch"
+    url: "http://isabelakanji.ch"
   },
   {
     name: "Tavolata für innere Werte",
     description: "Dinieren von Kopf bis Fuss",
-    url: "innere-werte.ch"
+    url: "http://innere-werte.ch"
   },
   {
     name: "Ponsyrus Genossenschaft",
-    description: "Kleingenossenschaftliches Wohenn",
-    url: "ponsyrus.ch"
+    description: "Kleingenossenschaftliches Wohnen",
+    url: "http://ponsyrus.ch"
   }
 ];

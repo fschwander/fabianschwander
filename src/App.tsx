@@ -1,11 +1,13 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
-import {ScrollNavContainer} from './components/ScrollNavContainer';
+import {ItemsContainer} from './components/ItemsContainer';
 
 function App() {
+
   return (
     <div className="App">
-      <ScrollNavContainer/>
+      <ItemsContainer/>
     </div>
   );
 }
