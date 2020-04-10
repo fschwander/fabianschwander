@@ -8,7 +8,7 @@ export const ItemsContainer: React.FC = () => {
 
   const createUrlItems = () => {
     return urlItems.map((el, i) => {
-      return <UrlItem data={el} index={i}/>
+      return <UrlItem data={el} key={el.name + i}/>;
     });
   };
 
