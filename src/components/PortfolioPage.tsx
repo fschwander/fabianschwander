@@ -13,8 +13,8 @@ export const PortfolioPage: React.FC = () => {
 
   const createUrlTiles = () => {
     return urlItems.map((el, i) => {
-      return <TileContainer>
-        <UrlTile data={el} key={el.name + i}/>
+      return <TileContainer key={el.name + i}>
+        <UrlTile data={el}/>
       </TileContainer>;
     });
   };

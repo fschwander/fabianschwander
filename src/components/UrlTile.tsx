@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './UrlTile.scss';
 
 interface UrlTileProps {
@@ -6,9 +6,12 @@ interface UrlTileProps {
 }
 
 export const UrlTile: React.FC<UrlTileProps> = props => {
+  const isInitialMount = useRef(true);
   const {data} = props;
 
-  const colors = ['deeppink', 'deepskyblue', 'rebeccapurple'];
+  const colors = ['#ff1493', '#00bfff', '#663399'];
+  const animationInterval = 12 * 1000;
+  const animationOffset = useRef(Math.floor(Math.random() * animationInterval / 2));
 
   const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
   const getRandomDeg = () => Math.floor(Math.random() * 360);
@@ -27,10 +30,37 @@ export const UrlTile: React.FC<UrlTileProps> = props => {
     return `linear-gradient(${getRandomDeg()}deg, ${color1}, ${color2})`;
   };
 
+  const [gradient1, setGradient1] = useState(getRandomGradient());
+  const [gradient2, setGradient2] = useState(getRandomGradient());
+
+  useEffect(() => {
+    if (isInitialMount.current) {
+      // animationOffset = Math.floor(Math.random() * animationInterval / 2);
+      setTimeout(() => {
+        console.log(animationOffset);
+        setGradient1(getRandomGradient);
+        setTimeout(() => setGradient2(getRandomGradient), animationInterval / 2);
+        setInterval(() => setGradient1(getRandomGradient), animationInterval);
+        setTimeout(() => setInterval(() => setGradient2(getRandomGradient), animationInterval), animationInterval / 2);
+
+      }, animationOffset.current);
+      isInitialMount.current = false;
+    }
+  });
+
   return (
     <div className={'UrlTile button'}
-         onClick={() => window.open(data.url, '_blank')}
-         style={{backgroundImage: getRandomGradient()}}>
+         onClick={() => window.open(data.url, '_blank')}>
+      <div className={'background gradient1'}
+           style={{backgroundImage: gradient1}}/>
+      <div className={'background gradient2'}
+           style={{
+             backgroundImage: gradient2,
+             animationDuration: `${animationInterval / 2}ms`,
+             animationDelay: `${animationOffset.current}ms`
+           }}/>
+      <div className={'background filter'}/>
+
       <h2>{data.name}</h2>
       <p>{data.description}</p>
     </div>
