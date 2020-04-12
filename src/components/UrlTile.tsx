@@ -35,14 +35,9 @@ export const UrlTile: React.FC<UrlTileProps> = props => {
 
   useEffect(() => {
     if (isInitialMount.current) {
-      // animationOffset = Math.floor(Math.random() * animationInterval / 2);
       setTimeout(() => {
-        console.log(animationOffset);
-        setGradient1(getRandomGradient);
-        setTimeout(() => setGradient2(getRandomGradient), animationInterval / 2);
         setInterval(() => setGradient1(getRandomGradient), animationInterval);
         setTimeout(() => setInterval(() => setGradient2(getRandomGradient), animationInterval), animationInterval / 2);
-
       }, animationOffset.current);
       isInitialMount.current = false;
     }
@@ -50,10 +45,9 @@ export const UrlTile: React.FC<UrlTileProps> = props => {
 
   return (
     <div className={'UrlTile button'}
+         style={{backgroundImage: gradient1}}
          onClick={() => window.open(data.url, '_blank')}>
-      <div className={'background gradient1'}
-           style={{backgroundImage: gradient1}}/>
-      <div className={'background gradient2'}
+      <div className={'background gradient-overlay'}
            style={{
              backgroundImage: gradient2,
              animationDuration: `${animationInterval / 2}ms`,
@@ -61,8 +55,10 @@ export const UrlTile: React.FC<UrlTileProps> = props => {
            }}/>
       <div className={'background filter'}/>
 
-      <h2>{data.name}</h2>
-      <p>{data.description}</p>
+      <div className={'text-container'}>
+        <h2>{data.name}</h2>
+        <p>{data.description}</p>
+      </div>
     </div>
   );
 };
