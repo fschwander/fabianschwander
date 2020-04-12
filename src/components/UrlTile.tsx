@@ -2,7 +2,8 @@ import React, {useEffect, useRef, useState} from 'react';
 import './UrlTile.scss';
 
 interface UrlTileProps {
-  data: any
+  data: any,
+  index: number
 }
 
 export const UrlTile: React.FC<UrlTileProps> = props => {
@@ -11,7 +12,7 @@ export const UrlTile: React.FC<UrlTileProps> = props => {
 
   const colors = ['#ff1493', '#00bfff', '#663399'];
   const animationInterval = 12 * 1000;
-  const animationOffset = useRef(Math.floor(Math.random() * animationInterval / 2));
+  const animationOffset = useRef(props.index === 0 ? 0 : Math.floor(Math.random() * animationInterval / 2));
 
   const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
   const getRandomDeg = () => Math.floor(Math.random() * 360);

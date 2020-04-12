@@ -14,7 +14,7 @@ export const PortfolioPage: React.FC = () => {
   const createUrlTiles = () => {
     return urlItems.map((el, i) => {
       return <TileContainer key={el.name + i}>
-        <UrlTile data={el}/>
+        <UrlTile data={el} index={i}/>
       </TileContainer>;
     });
   };
