@@ -45,8 +45,8 @@ export const UrlTile: React.FC<UrlTileProps> = props => {
 
   return (
     <div className={'UrlTile button'}
-         style={{backgroundImage: gradient1}}
          onClick={() => window.open(data.url, '_blank')}>
+      <div className={'background'} style={{backgroundImage: gradient1}}/>
       <div className={'background gradient-overlay'}
            style={{
              backgroundImage: gradient2,

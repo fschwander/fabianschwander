@@ -7,11 +7,11 @@ interface UrlItemsInterface {
 export const urlItems:Array<UrlItemsInterface> = [
   {
     name: "Work Life Aargau",
-    description: "Exploratives Interaktionskonzept für den Kanton Aargau. Für Desktop. Bachelorarbeit",
+    description: "Exploratives Interaktionskonzept für den Kanton Aargau. Bachelorarbeit",
     url: "http://work-life-aargau.fabianschwander.ch"
   },
   {
-    name: "Portfolio von Michelle Akanji",
+    name: "Arbeiten von Michelle Akanji",
     description: "Audio-Feature, Artikel und Texte von Michelle Akanji",
     url: "http://michelleakanji.ch"
   },
@@ -21,8 +21,8 @@ export const urlItems:Array<UrlItemsInterface> = [
     url: "http://hofsterben.fabianschwander.ch"
   },
   {
-    name: "Modulplaner für Studierende",
-    description: "Interaktives Tool für die Studiumsplanung an der Fachhochschule Nordwestschweiz",
+    name: "Modulplan für Studierende",
+    description: "Interaktive Visualisierung des Studimsfortschritts. Konzept für die Fachhochschule Nordwestschweiz",
     url: "https://web0.fhnw.ch/modulvisualisierung/"
   },
   {

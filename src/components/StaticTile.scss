@@ -1,31 +1,3 @@
 .StaticTile {
   height: 100%;
-
-  &.HeaderTile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  &.ContactsTile {
-    display: flex;
-    flex-direction: column;
-
-    .icon {
-      width: 3rem;
-      height: 3rem;
-      margin: .75rem 0;
-      pointer-events: none;
-
-      g {
-        border-radius: 50%;
-        pointer-events: all;
-
-        path {
-          fill: deepskyblue;
-        }
-      }
-    }
-  }
 }
