@@ -22,8 +22,8 @@ export const PortfolioPage: React.FC = () => {
   const HeaderTile = () => {
     return <TileContainer>
       <StaticTile className={'HeaderTile'}>
-        <h2>Fabian Schwander</h2>
         <h1>Portfolio</h1>
+        <h2>Fabian Schwander</h2>
       </StaticTile>
     </TileContainer>;
   };

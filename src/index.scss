@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Merriweather:wght@700&family=Playfair+Display:wght@600&family=Taviraj:wght@500&display=swap');
+
 body {
   margin: 0;
+  font-family: Futura, Arvo, serif;
+  color: #444;
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: Avenir, 'Helvetica Neue', serif;
+    font-size: 14px;
+  }
 
   .button {
     cursor: grab;
