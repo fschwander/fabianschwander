@@ -19,10 +19,28 @@
       height: 3rem;
       margin: .75rem 0;
       pointer-events: none;
+      transition: .5s ease-in-out;
+
+      g {
+        border-radius: 50%;
+        pointer-events: all;
+
+        path {
+          transition: fill .3s ease-in-out;
+          fill: white;
+        }
+
+        circle, rect {
+          fill: transparent;
+        }
+      }
 
       &:hover {
         animation: rotate infinite 1s ease-in-out;
-        transition: 2s ease-in-out;
+
+        path {
+          fill: #aaa;
+        }
 
         @keyframes rotate {
           from {
@@ -31,19 +49,6 @@
           to {
             transform: rotate(360deg);
           }
-        }
-      }
-
-      g {
-        border-radius: 50%;
-        pointer-events: all;
-
-        path {
-          fill: white;
-        }
-
-        circle, rect {
-          fill: transparent;
         }
       }
     }
